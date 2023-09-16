@@ -17,9 +17,7 @@ struct LoginView: View {
                 .ignoresSafeArea()
             
             Button {
-                withAnimation(.spring()) {
-                    appRootManager.currentRoot = .home
-                }
+                appRootManager.currentRoot = .home
             } label: {
                 Text("Login")
                     .fontWeight(.semibold)

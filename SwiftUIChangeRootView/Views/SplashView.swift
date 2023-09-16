@@ -24,9 +24,7 @@ struct SplashView: View {
         
         .onAppear() {
             DispatchQueue.main.asyncAfter(deadline: .now() + 3) {
-                withAnimation(.spring()) {
-                    appRootManager.currentRoot = .authentication
-                }
+                appRootManager.currentRoot = .authentication
             }
         }
     }

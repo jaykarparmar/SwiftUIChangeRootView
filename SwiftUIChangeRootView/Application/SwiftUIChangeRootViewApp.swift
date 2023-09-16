@@ -21,9 +21,11 @@ struct SwiftUIChangeRootViewApp: App {
                     
                 case .authentication:
                     LoginView()
+                        .transition(.scale.animation(.easeInOut(duration: 0.5)))
                     
                 case .home:
                     HomeView()
+                        .transition(.scale.animation(.easeInOut(duration: 0.5)))
                 }
             }
             .environmentObject(appRootManager)
